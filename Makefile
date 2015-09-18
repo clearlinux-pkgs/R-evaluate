@@ -1,4 +1,5 @@
 PKG_NAME := R-evaluate
-URL := http://cran.r-project.org/src/contrib/evaluate_0.7.2.tar.gz
+URL := http://cran.r-project.org/src/contrib/evaluate_0.8.tar.gz
+ARCHIVES :=
 
 include ../common/Makefile.common
