@@ -4,14 +4,12 @@
 #
 Name     : R-evaluate
 Version  : 0.9
-Release  : 30
+Release  : 31
 URL      : http://cran.r-project.org/src/contrib/evaluate_0.9.tar.gz
 Source0  : http://cran.r-project.org/src/contrib/evaluate_0.9.tar.gz
 Summary  : Parsing and Evaluation Tools that Provide More Details than the
 Group    : Development/Tools
 License  : GPL-2.0 MIT
-Requires: R-stringr
-BuildRequires : R-stringr
 BuildRequires : clr-R-helpers
 
 %description
