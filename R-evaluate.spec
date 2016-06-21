@@ -4,12 +4,14 @@
 #
 Name     : R-evaluate
 Version  : 0.9
-Release  : 32
+Release  : 33
 URL      : http://cran.r-project.org/src/contrib/evaluate_0.9.tar.gz
 Source0  : http://cran.r-project.org/src/contrib/evaluate_0.9.tar.gz
 Summary  : Parsing and Evaluation Tools that Provide More Details than the
 Group    : Development/Tools
 License  : GPL-2.0 MIT
+Requires: R-stringr
+BuildRequires : R-stringr
 BuildRequires : clr-R-helpers
 
 %description
@@ -34,6 +36,7 @@ mkdir -p %{buildroot}/usr/lib64/R/library
 R CMD INSTALL --install-tests --build  -l %{buildroot}/usr/lib64/R/library evaluate
 %{__rm} -rf %{buildroot}%{_datadir}/R/library/R.css
 %check
+export LANG=C
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost
