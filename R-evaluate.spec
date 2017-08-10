@@ -4,7 +4,7 @@
 #
 Name     : R-evaluate
 Version  : 0.10.1
-Release  : 48
+Release  : 49
 URL      : https://cran.r-project.org/src/contrib/evaluate_0.10.1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/evaluate_0.10.1.tar.gz
 Summary  : Parsing and Evaluation Tools that Provide More Details than the
@@ -13,7 +13,7 @@ License  : GPL-2.0 MIT
 BuildRequires : clr-R-helpers
 
 %description
-No detailed description available
+command line behaviour of R.
 
 %prep
 %setup -q -c -n evaluate
@@ -23,11 +23,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1498450501
+export SOURCE_DATE_EPOCH=1502399403
 
 %install
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1498450501
+export SOURCE_DATE_EPOCH=1502399403
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
