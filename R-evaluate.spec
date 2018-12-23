@@ -4,7 +4,7 @@
 #
 Name     : R-evaluate
 Version  : 0.12
-Release  : 68
+Release  : 69
 URL      : https://cran.r-project.org/src/contrib/evaluate_0.12.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/evaluate_0.12.tar.gz
 Summary  : Parsing and Evaluation Tools that Provide More Details than the
