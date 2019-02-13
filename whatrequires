@@ -1,14 +1,10 @@
 # This file contains recursive sources that require this package
 R-IRkernel
-R-Sleuth2
-R-adegraphics
-R-argparse
-R-checkmate
 R-corrplot
-R-digest
 R-ggplot2
 R-glue
 R-memisc
 R-rprojroot
 R-rvest
+R-testthat
 R-xtable
