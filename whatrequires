@@ -1,6 +1,6 @@
 # This file contains recursive sources that require this package
 R-IRkernel
-R-corrplot
+R-adegraphics
 R-ggplot2
 R-glue
 R-memisc

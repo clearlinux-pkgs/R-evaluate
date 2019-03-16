@@ -4,7 +4,7 @@
 #
 Name     : R-evaluate
 Version  : 0.13
-Release  : 72
+Release  : 73
 URL      : https://cran.r-project.org/src/contrib/evaluate_0.13.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/evaluate_0.13.tar.gz
 Summary  : Parsing and Evaluation Tools that Provide More Details than the
@@ -23,10 +23,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1550027258
+export SOURCE_DATE_EPOCH=1552755122
 
 %install
-export SOURCE_DATE_EPOCH=1550027258
+export SOURCE_DATE_EPOCH=1552755122
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -62,8 +62,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library evaluate|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  evaluate || :
 
 
 %files
@@ -89,3 +88,39 @@ cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
 /usr/lib64/R/library/evaluate/help/paths.rds
 /usr/lib64/R/library/evaluate/html/00Index.html
 /usr/lib64/R/library/evaluate/html/R.css
+/usr/lib64/R/library/evaluate/tests/test-all.R
+/usr/lib64/R/library/evaluate/tests/test-parse.R
+/usr/lib64/R/library/evaluate/tests/test-replay.R
+/usr/lib64/R/library/evaluate/tests/testthat/comment.r
+/usr/lib64/R/library/evaluate/tests/testthat/data.r
+/usr/lib64/R/library/evaluate/tests/testthat/error-complex.r
+/usr/lib64/R/library/evaluate/tests/testthat/error.r
+/usr/lib64/R/library/evaluate/tests/testthat/example-1.r
+/usr/lib64/R/library/evaluate/tests/testthat/ggplot-loop.r
+/usr/lib64/R/library/evaluate/tests/testthat/ggplot.r
+/usr/lib64/R/library/evaluate/tests/testthat/interleave-1.r
+/usr/lib64/R/library/evaluate/tests/testthat/interleave-2.r
+/usr/lib64/R/library/evaluate/tests/testthat/order.r
+/usr/lib64/R/library/evaluate/tests/testthat/parse.r
+/usr/lib64/R/library/evaluate/tests/testthat/plot-additions.r
+/usr/lib64/R/library/evaluate/tests/testthat/plot-clip.r
+/usr/lib64/R/library/evaluate/tests/testthat/plot-last-comment.r
+/usr/lib64/R/library/evaluate/tests/testthat/plot-loop.r
+/usr/lib64/R/library/evaluate/tests/testthat/plot-multi-layout.r
+/usr/lib64/R/library/evaluate/tests/testthat/plot-multi-layout2.r
+/usr/lib64/R/library/evaluate/tests/testthat/plot-multi-missing.r
+/usr/lib64/R/library/evaluate/tests/testthat/plot-multi.r
+/usr/lib64/R/library/evaluate/tests/testthat/plot-new.r
+/usr/lib64/R/library/evaluate/tests/testthat/plot-par.r
+/usr/lib64/R/library/evaluate/tests/testthat/plot-par2.r
+/usr/lib64/R/library/evaluate/tests/testthat/plot-persp.r
+/usr/lib64/R/library/evaluate/tests/testthat/plot-strwidth.r
+/usr/lib64/R/library/evaluate/tests/testthat/plot.r
+/usr/lib64/R/library/evaluate/tests/testthat/raw-output.r
+/usr/lib64/R/library/evaluate/tests/testthat/test-errors.r
+/usr/lib64/R/library/evaluate/tests/testthat/test-evaluate.r
+/usr/lib64/R/library/evaluate/tests/testthat/test-graphics.r
+/usr/lib64/R/library/evaluate/tests/testthat/test-output-handler.R
+/usr/lib64/R/library/evaluate/tests/testthat/test-output.r
+/usr/lib64/R/library/evaluate/tests/testthat/test-parse.r
+/usr/lib64/R/library/evaluate/tests/testthat/try.r
