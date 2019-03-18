@@ -1,10 +1,14 @@
 # This file contains recursive sources that require this package
 R-IRkernel
+R-SGPdata
 R-adegraphics
 R-ggplot2
 R-glue
+R-magick
 R-memisc
-R-rprojroot
-R-rvest
+R-princurve
+R-shinyjs
+R-stringr
+R-styler
 R-testthat
 R-xtable
