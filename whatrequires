@@ -2,13 +2,13 @@
 R-IRkernel
 R-SGPdata
 R-adegraphics
+R-bayesplot
 R-ggplot2
 R-glue
+R-labelled
 R-magick
-R-memisc
 R-princurve
 R-shinyjs
+R-snakecase
 R-stringr
-R-styler
-R-testthat
-R-xtable
+R-visNetwork
