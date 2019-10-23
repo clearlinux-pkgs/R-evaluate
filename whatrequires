@@ -1,14 +1,10 @@
 # This file contains recursive sources that require this package
 R-IRkernel
-R-SGPdata
-R-adegraphics
-R-bayesplot
-R-ggplot2
+R-RProtoBuf
+R-emmeans
 R-glue
+R-knitr
 R-labelled
-R-magick
-R-princurve
-R-shinyjs
-R-snakecase
-R-stringr
-R-visNetwork
+R-pkgdown
+R-rmarkdown
+R-testthat
