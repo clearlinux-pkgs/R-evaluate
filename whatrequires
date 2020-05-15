@@ -1,10 +1,7 @@
 # This file contains recursive sources that require this package
 R-IRkernel
-R-RProtoBuf
-R-emmeans
 R-glue
 R-knitr
-R-labelled
 R-pkgdown
 R-rmarkdown
 R-testthat
