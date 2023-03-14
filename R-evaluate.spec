@@ -4,16 +4,13 @@
 #
 Name     : R-evaluate
 Version  : 0.20
-Release  : 109
+Release  : 110
 URL      : https://cran.r-project.org/src/contrib/evaluate_0.20.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/evaluate_0.20.tar.gz
 Summary  : Parsing and Evaluation Tools that Provide More Details than the
 Group    : Development/Tools
 License  : GPL-2.0 MIT
 BuildRequires : buildreq-R
-# Suppress stripping binaries
-%define __strip /bin/true
-%define debug_package %{nil}
 
 %description
 command line behaviour of R.
@@ -27,10 +24,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1674058347
+export SOURCE_DATE_EPOCH=1678817759
 
 %install
-export SOURCE_DATE_EPOCH=1674058347
+export SOURCE_DATE_EPOCH=1678817759
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
